@@ -699,7 +699,8 @@ p {
 	margin-left: -150px;
 }
 #projects .item .left .img {
-	height: 470px;
+	/* height: 470px; */
+	height: 70vh;
 	overflow: hidden;
 	border-radius: 12px;
 	overflow: hidden;
@@ -768,6 +769,16 @@ p {
 	/* padding: calc(0.6em - 4px) calc(1.6em - 4px); */
 	margin-left: 1.7vw;
 }
+#projects .item .right .buttons .primary-btn.outline.preview {
+	background-color: transparent;
+	border: 2px solid #dc143d;
+	color: #dc143d;
+	font-size: 1.6rem;
+	transition: 0.3s ease;
+	transition-property: background-color, color;
+	padding: calc(0.6em - 4px) calc(1.8em - 4px);
+	margin-left: 0;
+}
 /* #projects .item .right .buttons .primary-btn.outline:hover {
 	color: white;
 	background-color: crimson;	
@@ -803,12 +814,16 @@ p {
 	#projects .item {
 		flex-direction: column;
 	}
+	/* #projects .item .img {
+		height: 20%;
+	} */
 	#projects .item .left {
-		width: 88%;
+		width: 97%;
+		/* height: 20%; */
 	}
 	#projects .item .right {
 		margin-left: 0;
-		width: 75%;
+		width: 90%;
 		margin-top: -180px;
 		/* padding: 4rem 3rem; */
 	}
@@ -820,12 +835,57 @@ p {
 	}
 }
 @media only screen and (max-width: 450px) {
+	#projects .item .left .img {
+		height: 70vh;
+	}
+	#projects .item .left {
+		width: 98%;
+		/* height: 20%; */
+	}
+	#projects .item .right {
+		width: 92%;
+	}
 	#projects .item .right .buttons {
 		flex-direction: column;
 	}
 	#projects .item .right .buttons a {
-		width: 100%;
+		/* width: 100%; */
 		text-align: center;
+		/* margin-left: -1vw; */
+		margin: 1vw;
+		padding: calc(0.7em - 4px) calc(1em - 4px);
+	}
+	/* #projects .item .right .primary-btn {
+		display: flex;
+		text-align: center;
+		margin-bottom: 1rem;
+		margin-left: 1vw;
+		padding: calc(0.7em - 4px) calc(1em - 4px);
+	}	 */
+	#projects .item .right .buttons .primary-btn.outline {
+		margin-left: 1vw;
+	}
+	/* #projects .item .right .primary-btn {
+		padding: 2rem;
+		text-align: center;
+		align-items: center;
+		align-self: center;
+		align-content: center;
+		font
+	} */
+	#projects .item .left .img {
+		/* height: 470px; */
+		height: 40vh;
+	}
+	#projects .item .right .primary-btn.outline.preview {
+		display: flex;
+		text-align: center;
+		/* margin-bottom: 1rem; */
+		margin-left: 1vw;
+		padding: calc(0.7em - 4px) calc(1em - 4px);
+	}
+	#projects .item .right {
+		padding: 4.5rem 2.5rem;
 	}
 }
 /*End of Projects Section*/
@@ -1319,6 +1379,16 @@ p {
 }
 /* End Keyframes */
 
+/* Media Queryy For Phone */
+@media only screen and (max-width: 450px){
+	.brand img {
+		/* font-size: 3rem;
+		text-transform: uppercase;
+		color: white; */
+		height: 5.3rem;
+		width: 26rem;
+	}
+} 
 /* Media Query For Tablet */
 @media only screen and (min-width: 768px) {
 	.cta {
